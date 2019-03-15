@@ -1,0 +1,101 @@
+<!DOCTYPE  html>
+<html>
+    <head>
+            <link rel="icon" href="img/logo_tli.png">
+
+        <style>
+            body{
+                background-image: url('img/back9.jpg');
+            }
+            
+            .loginbox{
+                width:320px;
+                height: 420px;
+                background: rgba(0,0,0,0.5) ;
+                color: #fff;
+                top: 50%;
+                left: 50%;
+                position:absolute;
+                transform: translate(-50% , -50% );
+                box-sizing: border-box;
+                padding:  70px 30px;
+            }
+            .avatar{
+                height: 100px;
+                width: 100px;
+                position: absolute;
+                border-radius: 50%;
+                top: -50px;
+                left: calc(50% - 50px);
+            }
+            h1{
+                margin: 0;
+                padding: 0 0 20px;
+                text-align: center;
+                font-size: 25px;
+            }
+            .loginbox p{
+                margin: 0;
+                padding: 0;
+                font-weight: bold;
+
+            }
+            .loginbox input{
+                width: 100%;
+                margin-bottom: 20px;
+                }
+            .loginbox input[type="text"], input[type="password"]{
+                border: none;
+                border-bottom: 1px solid #fff;
+                background: transparent;
+                outline: none;
+                height: 40px;
+                color: #fff;
+                font-size: 16px;
+            } 
+            .loginbox input[type="submit"]{
+                border:none;
+                outline: none;
+                height: 40px;
+                border-radius: 20px;
+                background-color: #fb2525;
+                color: #fff;
+                font-size:18px;
+            }
+            .loginbox input[type="submit"]:hover{
+                cursor: pointer;
+                background: black;
+                color: #ffffff;
+            
+            }
+            .loginbox a{
+                text-decoration: none;
+                font-size: 12px;
+                line-height: 20px;
+                color: #fff;
+            }
+            .loginbox a:hover{
+                color: #000;
+            }
+        </style>
+    </head>
+    <body>
+        
+            <div class="col-sm-9 col-md-8 col-lg-3">
+        <div class="loginbox">
+            <img src="img/avatar.png"  class="avatar" alt="avatar">
+            <h1>SignUp Here</h1>
+            <form action="">
+                <p> Username </p>
+                <input type="text" name ="" placeholder="Enter Username ">
+                <p>Password</p>
+                <input type="password" name ="" placeholder="Enter Password">
+                <input type="submit" name="" value ="Login">
+                <a href="#">Don't have an account?</a>
+            </form>
+
+        </div>
+        </div>
+        
+    </body>
+</html>

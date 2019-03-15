@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="img/logo_tli.png">
+    <title>Tesla Learning Institute</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Libre+Baskerville" rel="stylesheet">
+    <style>       
+        .img-responsive {
+            -webkit-filter: grayscale(90%); 
+            filter: grayscale(90%);
+            }
+        nav {
+            background-color: black;
+            box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+        }
+
+        ul li a {
+            color: white;
+            font-family: 'Libre Baskerville', serif; 
+            font-size: 20px;
+            letter-spacing: 1.2px;
+            padding-left: 10px;
+        }
+
+        ul li a:hover {
+            color: #000;
+            background-color: #fb2525;
+        }
+
+        .nav_below {
+            background-color: #fb2525;
+            color: white;
+            height: 80px;
+        }
+
+        .nav_below h4 {
+            padding-left: 5%;
+            padding-top: 10px;
+        }
+
+        .navbar-toggler-icon {
+            display: inline-block;
+            width: 1.5em;
+            height: 1.5em;
+            vertical-align: middle;
+            content: "";
+            background: no-repeat center center;
+            background-size: 100% 100%;
+        }
+
+        #classes a:hover{
+            background-color: #fb2525;
+        }
+        #classes a:hover{
+            color:white;
+        }
+
+        .first_box {
+            float: left;
+            font-size: 60px;
+            font-weight: 500;
+            font-family: 'Libre Baskerville', serif;
+            padding-top: 5%;
+        }
+
+        .navbar-toggler-icon {
+            background-color: #ffffff;
+        }
+
+        :root {
+            --input-padding-x: 1.5rem;
+            --input-padding-y: .75rem;
+        }
+
+        .card-signin {
+            border: 0;
+            border-radius: 1rem;
+            box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+        }
+
+        .card-signin .card-title {
+            margin-bottom: 2rem;
+            font-weight: 300;
+            font-size: 1.5rem;
+        }
+
+        .card-signin .card-body {
+            padding: 2rem;
+        }
+
+        .form-signin {
+            width: 100%;
+        }
+
+        .form-signin .btn {
+            font-size: 80%;
+            border-radius: 5rem;
+            letter-spacing: .1rem;
+            font-weight: bold;
+            padding: 1rem;
+            transition: all 0.2s;
+        }
+
+        .form-label-group {
+            position: relative;
+            margin-bottom: 1rem;
+        }
+
+        .form-label-group input {
+            height: auto;
+            border-radius: 2rem;
+        }
+
+        .form-label-group>input,
+        .form-label-group>label {
+            padding: var(--input-padding-y) var(--input-padding-x);
+        }
+
+        .form-label-group>label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            margin-bottom: 0;
+            line-height: 1.5;
+            color: #495057;
+            border: 1px solid transparent;
+            border-radius: .25rem;
+            transition: all .1s ease-in-out;
+        }
+
+        .form-label-group input::-webkit-input-placeholder {
+            color: transparent;
+        }
+
+        .form-label-group input:-ms-input-placeholder {
+            color: transparent;
+        }
+
+        .form-label-group input::-ms-input-placeholder {
+            color: transparent;
+        }
+
+        .form-label-group input::-moz-placeholder {
+            color: transparent;
+        }
+
+        .form-label-group input::placeholder {
+            color: transparent;
+        }
+
+        .form-label-group input:not(:placeholder-shown) {
+            padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
+            padding-bottom: calc(var(--input-padding-y) / 3);
+        }
+
+        .form-label-group input:not(:placeholder-shown)~label {
+            padding-top: calc(var(--input-padding-y) / 3);
+            padding-bottom: calc(var(--input-padding-y) / 3);
+            font-size: 12px;
+            color: #777;
+        }
+
+        .btn-google {
+            color: white;
+            background-color: #ea4335;
+        }
+
+        .btn-facebook {
+            color: white;
+            background-color: #3b5998;
+        }
+
+        .card-body img {
+            height: 300px;
+            width: 320px;
+            object-fit: cover;
+        }
+
+        .hovereffect {
+            width: 100%;
+            height: 100%;
+            float: left;
+            overflow: hidden;
+            position: relative;
+            text-align: center;
+            cursor: default;
+        }
+
+        .hovereffect .overlay {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            overflow: hidden;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out
+        }
+
+        .hovereffect img {
+            display: block;
+            position: relative;
+            -webkit-transition: all .4s linear;
+            transition: all .4s linear;
+        }
+
+        .hovereffect h2 {
+            text-transform: uppercase;
+            color: #fff;
+            text-align: center;
+            position: relative;
+            font-size: 30px;
+            background: rgba(0, 0, 0, 0.6);
+            -webkit-transform: translatey(-100px);
+            -ms-transform: translatey(-100px);
+            transform: translatey(-100px);
+            -webkit-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+            padding: 10px;
+        }
+
+        .hovereffect:hover img {
+            -ms-transform: scale(1.2);
+            -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+        }
+
+        .hovereffect:hover .overlay {
+            opacity: 1;
+            filter: alpha(opacity=100);
+        }
+
+        .hovereffect:hover h2 {
+            opacity: 1;
+            filter: alpha(opacity=100);
+            -ms-transform: translatey(0);
+            -webkit-transform: translatey(0);
+            transform: translatey(0);
+        }
+        .row .column .card {
+            margin-left: 10px;
+            margin-right: 10px;
+
+        }
+         #last_row .column .card {
+            margin-left: 0px;
+            margin-right: 0px;
+
+        }
+        q{
+         font-size: 80px;
+         font-weight: 900;
+         letter-spacing: -3.2px;
+         font-family: 'Righteous', cursive;          
+         letter-spacing: 3px;
+        color: hsl(0,0%,100%);
+        }
+        #quote{
+          background-color: black;
+        }
+        .footer {
+        position:relative;
+        width: 100%;
+        height: 30%;
+        background-color:#fb2525;
+        color: white;
+        text-align: center;
+        font-family: 'Libre Baskerville', serif; 
+        padding-top: 30px;
+        }
+        .fa{
+            padding: 10px 10px;
+            margin-bottom: 30px;
+        }
+        hr.footer_hr{
+            border-top:1px solid white;
+        }
+        .fa:hover{
+            color: black;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-expand-sm">
+        <a class="navbar-brand" style="color:white; padding-left:10px;">
+            <img src="img/logo_tli.png" width="80px" height="80px" alt="logo" >Tesla Learning 
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span style="font-size:30px;cursor:pointer; color:#fb2525" onclick="openNav()">☰</span></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Acadamics</a>
+                            <div class="dropdown-menu" id ="classes" >
+                              <a class="dropdown-item" href="Class_IX.html">Class IX</a>
+                              <a class="dropdown-item" href="Class_x.html">Class X</a>
+                              <a class="dropdown-item" href="Class_XI.html">Class XI-Science</a>
+                              <a class="dropdown-item" href="Class_XI.html">Class XI-Commerce</a>
+                              <a class="dropdown-item" href="Class_XII.html">Class XII-Science</a>
+                              <a class="dropdown-item" href="Class_XI.html">Class XII-Commerce</a>
+                            </div>
+                          </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Skills </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Test </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="signup.html">SignUp
+                <i class="fas fa-sign-in-alt" ></i>
+            </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="nav_below">
+        <h4 style="font-family: 'Source Sans Pro', sans-serif; font-weight:light; text-align: center;">Getting Started</h4>
+    </div>
+
+    <!--signup page-->
+    
+    <div class="row" id ="quote">
+        <div class="col-sm-9">
+            <div class="first_box">
+                    <q>DREAM BIGGER.<br>&nbsp GO BIGGER.</q>
+            </div>
+            
+        </div>
+        
+        
+      
+     <div class="col-sm-9 col-md-8 col-lg-3">
+        <div class="card card-signin my-5">
+            <div class="card-body">
+                <h5 class="card-title text-center">Sign In</h5>
+                <form class="form-signin">
+                    <div class="form-label-group">
+                        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                        <label for="inputEmail">Email address</label>
+                    </div>
+                    <div class="form-label-group">
+                        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                        <label for="inputPassword">Password</label>
+                    </div>
+                    <div class="custom-control custom-checkbox mb-3">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label" for="customCheck1">Remember password</label>
+                    </div>
+                    <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign in</button>
+                    <hr class="my-4">
+                    <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit">
+                                <i class="fab fa-google mr-2"></i> Sign in with Google
+                            </button>
+                    <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit">
+                                <i class="fab fa-facebook-f mr-2"></i> Sign in with Facebook
+                            </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+  </div>
+
+    <!--offering-->
+
+    <div class="row" style="background-color:hsl(0,0%,100%); padding-bottom: 50px;">
+        <div class="col-sm-9 col-md-8 col-lg-12 ">
+            <div class="first_box">
+                <p>
+                    <span style="color:black;font-size:80px; font-weight:800; letter-spacing:3.2px;font-family:'Righteous', cursive;">What are we offering? </span>
+                </p>
+            </div>
+        </div>
+        <div class="row" style="padding-top: 50px;padding-bottom: 50px;margin-bottom: 50px;">
+            <div class="column" style="margin-left:50px; margin-right:50px;">
+                <div class="col-sm-6 col-md-8 col-lg-3 ">
+                    <div class="card" style="height:300px;width: 320px; margin-top: 10px; margin-bottom: 10px;">
+                        <div class="card-body" style="padding:0px;">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="img/science stuff.png" alt="science">
+                                <div class="overlay" style="margin-top:40%;">
+                                    <h2>Science</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="col-sm-6 col-md-8 col-lg-3 ">
+                    <div class="card" style="height:300px;width: 320px; margin-top: 10px; margin-bottom: 10px;">
+                        <div class="card-body" style="padding:0px;">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="img/commerce.jpg" alt="science">
+                                <div class="overlay" style="margin-top:40%;">
+                                    <h2>Commerce</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="col-sm-6 col-md-8 col-lg-3 ">
+                    <div class="card" style="height:300px;width: 320px; margin-top: 10px; margin-bottom: 10px;">
+                        <div class="card-body" style="padding:0px;">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="img/yoga.jpg" alt="science">
+                                <div class="overlay" style="margin-top:40%;">
+                                    <h2>Yoga</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column" style="margin-left:30px; margin-right:20px;">
+                <div class="col-sm-6 col-md-8 col-lg-3 ">
+                    <div class="card" style="height:300px;width: 320px; margin-top: 10px; margin-bottom: 10px;">
+                        <div class="card-body" style="padding:0px;">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="img/pro.jpg" alt="science">
+                                <div class="overlay" style="margin-top:40%;">
+                                    <h2>Programming</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="col-sm-6 col-md-8 col-lg-3 ">
+                    <div class="card" style="height:300px;width: 320px; margin-top: 10px; margin-bottom: 10px;">
+                        <div class="card-body" style="padding:0px;">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="img/girl.jpg" alt="science">
+                                <div class="overlay" style="margin-top:40%;">
+                                    <h2>Mathematics</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="col-sm-6 col-md-8 col-lg-3 ">
+                    <div class="card" style="height:300px;width: 320px; margin-top: 10px; margin-bottom: 10px;">
+                        <div class="card-body" style="padding:0px;">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="img/other.jpg" alt="science">
+                                <div class="overlay" style="margin-top:40%;">
+                                    <h2>Skill Development</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+            <!--how we are going to do this -->
+
+
+            <div class="row" style="background-color:black">
+                    <div class="col-sm-9 col-md-8 col-lg-12 ">
+                        <div class="first_box">
+                            <p>
+                                <span style="color:hsl(0,0%,100%);font-size:80px; font-weight:800; letter-spacing:3.2px;font-family:'Righteous', cursive;">How are we going to do this?</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row" id ="last_row" style="padding-top:50px; padding-bottom:50px;">
+
+                        <div class="column" style="margin-left:30px; margin-right:20px;">
+                            <div class="col-sm-6 col-md-8 col-lg-3 ">
+                                <div class="card" style="height:300px;width: 320px; margin-top: 10px; margin-bottom: 10px;">
+                                    <div class="card-body" style="padding:0px;">
+                                        <div class="hovereffect">
+                                            <img class="img-responsive" src="img/teach.jpg" alt="science">
+                                            <div class="overlay" style="margin-top:40%;">
+                                                <h2>Teach</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="col-sm-6 col-md-8 col-lg-3 ">
+                                <div class="card" style="height:300px;width: 320px; margin-top: 10px; margin-bottom: 10px; ">
+                                    <div class="card-body" style="padding:0px;">
+                                        <div class="hovereffect">
+                                            <img class="img-responsive" src="img/practice.jpg" alt="science">
+                                            <div class="overlay" style="margin-top:40%;">
+                                                <h2>Practice</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="col-sm-6 col-md-8 col-lg-3 ">
+                                <div class="card" style="height:300px;width: 320px; margin-top: 10px; margin-bottom: 10px;">
+                                    <div class="card-body" style="padding:0px;">
+                                        <div class="hovereffect">
+                                            <img class="img-responsive" src="img/doubt.jpg" alt="science">
+                                            <div class="overlay" style="margin-top:40%;">
+                                                <h2>Doubt Classes</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                                <div class="col-sm-6 col-md-8 col-lg-3 ">
+                                    <div class="card" style="height:300px;width: 320px; margin-top: 10px; margin-bottom: 10px;">
+                                        <div class="card-body" style="padding:0px;">
+                                            <div class="hovereffect">
+                                                <img class="img-responsive" src="img/test.jpg" alt="science">
+                                                <div class="overlay" style="margin-top:40%;">
+                                                    <h2>Test</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                </div>
+
+                <!--footer-->
+                
+                <div class= "footer">
+                        <div class="d-flex bd-highlight">
+                                <div class="p-2 flex-fill bd-highlight">
+                                    <h5>Support</h5>
+                                    <hr class="footer_hr">
+
+
+                                </div>
+                                <div class="p-2 flex-fill bd-highlight">
+                                    <h5>About</h5>
+                                    <hr class="footer_hr">
+
+                                </div>
+                                <div class="p-2 flex-fill bd-highlight">
+                                    <h5>Contact</h5>
+                                    <hr class="footer_hr">
+                                    <i class="fa fa-facebook"></i>                                    
+                                    <i class="fa fa-instagram"></i>
+                                    <i class="fa fa-youtube-play"></i>
+                                    <i class="fa fa-envelope"></i>       
+                                </div>
+                        </div>
+                </div>
+                
+    
+</body>
+</html>
