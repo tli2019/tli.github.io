@@ -21,6 +21,7 @@
         nav {
             background-color: black;
             box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+            
         }
 
         ul li a {
@@ -186,70 +187,6 @@
             width: 320px;
             object-fit: cover;
         }
-
-        .hovereffect {
-            width: 100%;
-            height: 100%;
-            float: left;
-            overflow: hidden;
-            position: relative;
-            text-align: center;
-            cursor: default;
-        }
-
-        .hovereffect .overlay {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            overflow: hidden;
-            top: 0;
-            left: 0;
-            opacity: 0;
-            background-color: rgba(0, 0, 0, 0.5);
-            -webkit-transition: all .4s ease-in-out;
-            transition: all .4s ease-in-out
-        }
-
-        .hovereffect img {
-            display: block;
-            position: relative;
-            -webkit-transition: all .4s linear;
-            transition: all .4s linear;
-        }
-
-        .hovereffect h2 {
-            text-transform: uppercase;
-            color: #fff;
-            text-align: center;
-            position: relative;
-            font-size: 30px;
-            background: rgba(0, 0, 0, 0.6);
-            -webkit-transform: translatey(-100px);
-            -ms-transform: translatey(-100px);
-            transform: translatey(-100px);
-            -webkit-transition: all .2s ease-in-out;
-            transition: all .2s ease-in-out;
-            padding: 10px;
-        }
-
-        .hovereffect:hover img {
-            -ms-transform: scale(1.2);
-            -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-        }
-
-        .hovereffect:hover .overlay {
-            opacity: 1;
-            filter: alpha(opacity=100);
-        }
-
-        .hovereffect:hover h2 {
-            opacity: 1;
-            filter: alpha(opacity=100);
-            -ms-transform: translatey(0);
-            -webkit-transform: translatey(0);
-            transform: translatey(0);
-        }
         .row .column .card {
             margin-left: 10px;
             margin-right: 10px;
@@ -270,12 +207,13 @@
         }
         #quote{
           background-color: black;
+          
         }
         .footer {
         position:relative;
         width: 100%;
         height: 30%;
-        background-color:#fb2525;
+        background-color:hsl(141, 72%,39%);
         color: white;
         text-align: center;
         font-family: 'Libre Baskerville', serif; 
@@ -291,7 +229,109 @@
         .fa:hover{
             color: black;
         }
+        q{
+         font-size: 80px;
+         font-weight: 900;
+         letter-spacing: -3.2px;
+         font-family: 'Righteous', cursive;          
+         letter-spacing: 3px;
+        color: hsl(0,0%,100%);
+        }
+  
 
+.card-content {
+	background: #ffffff;
+	border: 4px;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+
+.card-img {
+	position: relative;
+	overflow: hidden;
+	border-radius: 0;
+	z-index: 1;
+}
+
+.card-img img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.card-img span {
+	position: absolute;
+    top: 15%;
+    left: 12%;
+    background: #1ABC9C;
+    padding: 6px;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    transform: translate(-50%,-50%);
+}
+.card-img span h4{
+        font-size: 12px;
+        margin:0;
+        padding:10px 5px;
+        line-height: 0;
+}
+.card-desc {
+	padding: 1.25rem;
+}
+
+.card-desc h3 {
+	color: #000000;
+    font-weight: 600;
+    font-size: 1.5em;
+    line-height: 1.3em;
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+.card-desc p {
+	color: #747373;
+    font-size: 14px;
+	font-weight: 400;
+	font-size: 1em;
+	line-height: 1.5;
+	margin: 0px;
+	margin-bottom: 20px;
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+}
+.btn-card{
+	background-color: black;
+	color: #fff;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    padding: .84rem 2.14rem;
+    font-size: .81rem;
+    -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    -o-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    margin: 0;
+    border: 0;
+    -webkit-border-radius: .125rem;
+    border-radius: .125rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    white-space: normal;
+    word-wrap: break-word;
+    color: #fff;
+}
+.btn-card:hover {
+    background: orange;
+}
+a.btn-card {
+    text-decoration: none;
+    color: #fff;
+}
 
     </style>
 </head>
@@ -300,10 +340,10 @@
     
     <nav class="navbar navbar-expand-sm">
         <a class="navbar-brand" style="color:white; padding-left:10px;">
-            <img src="img/logo_tli.png" width="80px" height="80px" alt="logo" >Tesla Learning 
+            <img src="img/logo_tli.png" width="80px" height="80px" alt="icon"><span style ="color: green;font-size : 25px;font-family: 'Libre Baskerville', serif;">Tesla Learning</span>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span style="font-size:30px;cursor:pointer; color:#fb2525" onclick="openNav()">☰</span></button>
+                <span style="font-size:30px;cursor:pointer; color:green" onclick="openNav()">☰</span></button>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
                     <li class="nav-item dropdown">
@@ -324,10 +364,13 @@
                     <a class="nav-link" href="#">Test </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="about.html">About </a>
+                    <a class="nav-link" href="about.html">AboutUs </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="blog.html">Blog </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://form.jotform.me/90672703915460">Register</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="signup.html">SignUp
@@ -338,256 +381,239 @@
         </div>
     </nav>
 
-    <div class="nav_below">
-        <h4 style="font-family: 'Source Sans Pro', sans-serif; font-weight:light; text-align: center;">Getting Started</h4>
-    </div>
+  <!--  <div class="nav_below">
+        <h4 style="font-family: 'Source Sans Pro', sans-serif; font-weight:light; text-align: center; padding-top: 30px;"><a href="https://form.jotform.me/90672703915460" style="color:white;">Register Now</a></h4>
+    </div>-->
 
     <!--signup page-->
-    
-    <div class="row" id ="quote">
-        <div class="col-sm-9">
-            <div class="first_box">
-                    <q>DREAM BIGGER.<br>&nbsp GO BIGGER.</q>
+    <div class="container-fluid" style="background-image: url('img/algi2.jpg');">
+        
+        
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-6 ">
+                <q>DREAM BIGGER;<br>&nbsp GO BIGGER.</q><br>
+                <button type="button" class="btn btn-outline-success" style="margin-top:50px; margin-left:40%;"><a href="https://form.jotform.me/90672703915460" style="color:green; text-decoration-line: none">Register Now</a></button>
             </div>
             
-        </div>
-        
-        
-      
-     <div class="col-sm-9 col-md-8 col-lg-3">
-        <div class="card card-signin my-5">
-            <div class="card-body">
-                <h5 class="card-title text-center">Sign In</h5>
-                <form class="form-signin">
-                    <div class="form-label-group">
-                        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-                        <label for="inputEmail">Email address</label>
+            <div class="col-lg-3"  style="margin: auto;">
+                <div class="card card-signin my-4">
+                    <div class="card-body" >
+                        <h5 class="card-title text-center">Sign In</h5>
+                        <form class="form-signin">
+                            <div class="form-label-group">
+                                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                                <label for="inputEmail">Email address</label>
+                            </div>
+                            <div class="form-label-group">
+                                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                                <label for="inputPassword">Password</label>
+                            </div>
+                            <div class="custom-control custom-checkbox mb-3">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                <label class="custom-control-label" for="customCheck1">Remember password</label>
+                            </div>
+                            <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign in</button>
+                            <hr class="my-4">
+                            <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit">
+                                        <i class="fab fa-google mr-2"></i> Sign in with Google
+                                    </button>
+                            <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit">
+                                        <i class="fab fa-facebook-f mr-2"></i> Sign in with Facebook
+                                    </button>
+                        </form>
                     </div>
-                    <div class="form-label-group">
-                        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                        <label for="inputPassword">Password</label>
-                    </div>
-                    <div class="custom-control custom-checkbox mb-3">
-                        <input type="checkbox" class="custom-control-input" id="customCheck1">
-                        <label class="custom-control-label" for="customCheck1">Remember password</label>
-                    </div>
-                    <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign in</button>
-                    <hr class="my-4">
-                    <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit">
-                                <i class="fab fa-google mr-2"></i> Sign in with Google
-                            </button>
-                    <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit">
-                                <i class="fab fa-facebook-f mr-2"></i> Sign in with Facebook
-                            </button>
-                </form>
+                </div>
             </div>
+          </div>
         </div>
-    </div>
-
-
-
-  </div>
+      </div>
+    
 
     <!--offering-->
-
-    <div class="row" style="background-color:hsl(0,0%,100%); padding-bottom: 50px;">
-        <div class="col-sm-9 col-md-8 col-lg-12 ">
-            <div class="first_box">
-                <p>
-                    <span style="color:black;font-size:80px; font-weight:800; letter-spacing:3.2px;font-family:'Righteous', cursive;">What are we offering? </span>
-                </p>
-            </div>
-        </div>
-        <div class="row" style="padding-top: 50px;padding-bottom: 50px;margin-bottom: 50px;">
-            <div class="column" style="margin-left:50px; margin-right:50px;">
-                <div class="col-sm-6 col-md-8 col-lg-3 ">
-                    <div class="card" style="height:300px;width: 320px; margin-top: 10px; margin-bottom: 10px;">
-                        <div class="card-body" style="padding:0px;">
-                            <div class="hovereffect">
-                                <img class="img-responsive" src="img/science stuff.png" alt="science">
-                                <div class="overlay" style="margin-top:40%;">
-                                    <h2>Science</h2>
-                                </div>
-                            </div>
+    <div style="background-image:url('img/algi1.jpg')">
+        <h1 style="font-size: 80px;
+        font-weight: 900;
+        letter-spacing: -3.2px;
+        font-family: 'Righteous', cursive;          
+        letter-spacing: 3px;
+       color: hsl(0,0%,100%); text-align: center; padding-top: 30px; padding-bottom: 30px;">Courses</h1>
+    <section class="details-card">
+        <div class="container" >
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card-content">
+                        <div class="card-img">
+                            <img src="img/science.jpg" alt="">
+                            <span style="background-color:black"><h4>1</h4></span>
+                        </div>
+                        <div class="card-desc">
+                            <h3>Science</h3>
+                            <p>Science in a broad sense existed before the modern era and in many historical civilizations. Modern science is distinct in its approach and successful in its results, so it now defines what science is in the ...</p>
+                                <a href="https://en.wikipedia.org/wiki/Science"  target="blank" class="btn-card">Read</a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="column">
-                <div class="col-sm-6 col-md-8 col-lg-3 ">
-                    <div class="card" style="height:300px;width: 320px; margin-top: 10px; margin-bottom: 10px;">
-                        <div class="card-body" style="padding:0px;">
-                            <div class="hovereffect">
-                                <img class="img-responsive" src="img/commerce.jpg" alt="science">
-                                <div class="overlay" style="margin-top:40%;">
-                                    <h2>Commerce</h2>
-                                </div>
-                            </div>
+                <div class="col-md-4">
+                    <div class="card-content">
+                        <div class="card-img">
+                            <img src="img/commerce.jpg" alt="">
+                            <span style="background-color:black"><h4>2</h4></span>
+                        </div>
+                        <div class="card-desc">
+                            <h3>Commerce</h3>
+                            <p>Some commentators trace the origins of commerce to the very start of transactions in prehistoric times. Apart from traditional self-sufficiency, trading became a principal facility of prehistoric people ...</p>
+                                <a href="https://en.wikipedia.org/wiki/Commerce"  target="blank" class="btn-card">Read</a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="column">
-                <div class="col-sm-6 col-md-8 col-lg-3 ">
-                    <div class="card" style="height:300px;width: 320px; margin-top: 10px; margin-bottom: 10px;">
-                        <div class="card-body" style="padding:0px;">
-                            <div class="hovereffect">
-                                <img class="img-responsive" src="img/yoga.jpg" alt="science">
-                                <div class="overlay" style="margin-top:40%;">
-                                    <h2>Yoga</h2>
-                                </div>
-                            </div>
+                <div class="col-md-4">
+                    <div class="card-content">
+                        <div class="card-img">
+                            <img src="img/girl.jpg" alt="">
+                            <span style="background-color:black"><h4>3</h4></span>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="column" style="margin-left:30px; margin-right:20px;">
-                <div class="col-sm-6 col-md-8 col-lg-3 ">
-                    <div class="card" style="height:300px;width: 320px; margin-top: 10px; margin-bottom: 10px;">
-                        <div class="card-body" style="padding:0px;">
-                            <div class="hovereffect">
-                                <img class="img-responsive" src="img/pro.jpg" alt="science">
-                                <div class="overlay" style="margin-top:40%;">
-                                    <h2>Programming</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="col-sm-6 col-md-8 col-lg-3 ">
-                    <div class="card" style="height:300px;width: 320px; margin-top: 10px; margin-bottom: 10px;">
-                        <div class="card-body" style="padding:0px;">
-                            <div class="hovereffect">
-                                <img class="img-responsive" src="img/girl.jpg" alt="science">
-                                <div class="overlay" style="margin-top:40%;">
-                                    <h2>Mathematics</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="col-sm-6 col-md-8 col-lg-3 ">
-                    <div class="card" style="height:300px;width: 320px; margin-top: 10px; margin-bottom: 10px;">
-                        <div class="card-body" style="padding:0px;">
-                            <div class="hovereffect">
-                                <img class="img-responsive" src="img/other.jpg" alt="science">
-                                <div class="overlay" style="margin-top:40%;">
-                                    <h2>Skill Development</h2>
-                                </div>
-                            </div>
+                        <div class="card-desc">
+                            <h3>Mathematics</h3>
+                            <p>   The history of mathematics can be seen as an ever-increasing series of abstractions. The first abstraction, which is shared by many animals, was probably that of numbers: the realization that a coll...</p>
+                                <a href="https://en.wikipedia.org/wiki/Mathematics" target="blank" class="btn-card">Read</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    <section class="details-card" style="padding-top: 50px; padding-bottom:50px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card-content">
+                        <div class="card-img">
+                            <img src="img/yoga.jpg" alt="">
+                            <span style="background-color:black"><h4>4</h4></span>
+                        </div>
+                        <div class="card-desc">
+                            <h3>Yoga</h3>
+                            <p>   Yoga ( Sanskrit: योग; About this soundpronunciation) is a group of physical, mental, and spiritual practices or disciplines which originated in ancient India. Yoga is one of the six orthodox schools of ...</p>
+                                <a href="https://en.wikipedia.org/wiki/Yoga" target="blank" class="btn-card">Read</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-content">
+                        <div class="card-img">
+                            <img src="img/pro.jpg" alt="">
+                            <span style="background-color:black"><h4>5</h4></span>
+                        </div>
+                        <div class="card-desc">
+                            <h3>Programming</h3>
+                            <p>Programming is the process of designing and building an executable computer program for accomplishing a specific computing task. Programming involves tasks such as: analysis ...</p>
+                                <a href="https://en.wikipedia.org/wiki/Computer_programming"  target="blank" class="btn-card">Read</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-content">
+                        <div class="card-img">
+                            <img src="img/other.jpg" alt="">
+                            <span style="background-color:black"><h4>6</h4></span>
+                        </div>
+                        <div class="card-desc">
+                            <h3>Other Skills</h3>
+                            <p>A skill is the ability to carry out a task with determined results often within a given amount of time, energy, or both. Skills can often be divided into domain-general and domain ...</p>
+                                <a href="https://en.wikipedia.org/wiki/Skill"  target="blank" class="btn-card">Read</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+    
 
 
             <!--how we are going to do this -->
-
-
-            <div class="row" style="background-color:black">
-                    <div class="col-sm-9 col-md-8 col-lg-12 ">
-                        <div class="first_box">
-                            <p>
-                                <span style="color:hsl(0,0%,100%);font-size:80px; font-weight:800; letter-spacing:3.2px;font-family:'Righteous', cursive;">How are we going to do this?</span>
-                            </p>
+            <div style="background-image:url('img/algi3.jpg')">
+                <h1 style="font-size: 80px;
+        font-weight: 900;
+        letter-spacing: -3.2px;
+        font-family: 'Righteous', cursive;          
+        letter-spacing: 3px;
+       color: hsl(0,0%,100%); text-align: center; padding-top: 30px; padding-bottom: 30px;">Format</h1>
+            <section class="details-card" style="padding-bottom: 30px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card-content">
+                                <div class="card-img">
+                                    <img src="img/teach.jpg" alt="">
+                                    <span style="background-color:black"><h4>Step1</h4></span>
+                                </div>
+                                <div class="card-desc">
+                                    <h3>Teach</h3>
+                                    <p>Education is the process of facilitating learning, or the acquisition of knowledge, skills, values, beliefs, and habits...</p>
+                                        <a href="https://en.wikipedia.org/wiki/Education"  target="blank" class="btn-card">Read</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card-content">
+                                <div class="card-img">
+                                    <img src="img/doubt.jpg" alt="" style="height:263px;">
+                                    <span style="background-color:black"><h4>Step2</h4></span>
+                                </div>
+                                <div class="card-desc">
+                                    <h3>Doubts</h3>
+                                    <p>Doubt is a mental state in which the mind remains suspended between two or more contradictory propositions, unable to...</p>
+                                        <a href="https://en.wikipedia.org/wiki/Doubt"  target="blank" class="btn-card">Read</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card-content">
+                                <div class="card-img">
+                                    <img src="img/test.jpg" alt="" style="height:263px;">
+                                    <span style="background-color:black"><h4>Step3</h4></span>
+                                </div>
+                                <div class="card-desc">
+                                    <h3>Test</h3>
+                                    <p>A test or examination (informally, exam or evaluation) is an assessment intended to measure a test-taker's knowledge,...</p>
+                                        <a href="https://en.wikipedia.org/wiki/Test_(assessment)" target="blank" class="btn-card">Read</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="row" id ="last_row" style="padding-top:50px; padding-bottom:50px;">
-
-                        <div class="column" style="margin-left:30px; margin-right:20px;">
-                            <div class="col-sm-6 col-md-8 col-lg-3 ">
-                                <div class="card" style="height:300px;width: 320px; margin-top: 10px; margin-bottom: 10px;">
-                                    <div class="card-body" style="padding:0px;">
-                                        <div class="hovereffect">
-                                            <img class="img-responsive" src="img/teach.jpg" alt="science">
-                                            <div class="overlay" style="margin-top:40%;">
-                                                <h2>Teach</h2>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="col-sm-6 col-md-8 col-lg-3 ">
-                                <div class="card" style="height:300px;width: 320px; margin-top: 10px; margin-bottom: 10px; ">
-                                    <div class="card-body" style="padding:0px;">
-                                        <div class="hovereffect">
-                                            <img class="img-responsive" src="img/practice.jpg" alt="science">
-                                            <div class="overlay" style="margin-top:40%;">
-                                                <h2>Practice</h2>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="col-sm-6 col-md-8 col-lg-3 ">
-                                <div class="card" style="height:300px;width: 320px; margin-top: 10px; margin-bottom: 10px;">
-                                    <div class="card-body" style="padding:0px;">
-                                        <div class="hovereffect">
-                                            <img class="img-responsive" src="img/doubt.jpg" alt="science">
-                                            <div class="overlay" style="margin-top:40%;">
-                                                <h2>Doubt Classes</h2>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column">
-                                <div class="col-sm-6 col-md-8 col-lg-3 ">
-                                    <div class="card" style="height:300px;width: 320px; margin-top: 10px; margin-bottom: 10px;">
-                                        <div class="card-body" style="padding:0px;">
-                                            <div class="hovereffect">
-                                                <img class="img-responsive" src="img/test.jpg" alt="science">
-                                                <div class="overlay" style="margin-top:40%;">
-                                                    <h2>Test</h2>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
                 </div>
+            </section>
+            </div>
+           
 
                 <!--footer-->
                 
                 <div class= "footer">
                         <div class="d-flex bd-highlight">
+                                
+                                
                                 <div class="p-2 flex-fill bd-highlight">
-                                    <h5>Support</h5>
+                                    <h5>Contact Us</h5>
                                     <hr class="footer_hr">
-
-
-                                </div>
-                                <div class="p-2 flex-fill bd-highlight">
-                                    <h5>About</h5>
-                                    <hr class="footer_hr">
-
-                                </div>
-                                <div class="p-2 flex-fill bd-highlight">
-                                    <h5>Contact</h5>
-                                    <hr class="footer_hr">
-                                    <i class="fa fa-facebook"></i>                                    
+                                    <a href="https://www.facebook.com/Tesla-Learning-Institute-726488824417999/?__tn__=%2Cd%2CP-R&eid=ARBzL3TupNp7Umsi2rXZmwCSRfoVOil4DQqkNxJX-0s_774v8umUtl2aK1W_YnPA2lU8zaKtl00RKrJM"  target="blank"style="color:white">
+                                    <i class="fa fa-facebook"></i>
+                                   </a>                                    
                                     <i class="fa fa-instagram"></i>
                                     <i class="fa fa-youtube-play"></i>
-                                    <i class="fa fa-envelope"></i>       
+                                    <a href="#" style="color: white">
+                                    <i class="fa fa-envelope"></i>  
+                                    </a>     
                                 </div>
+
+                        </div>
+                        <div>
+                            <p style="color:#000"> © Copyright 2019 Tesla Learning Institute, All Rights Reserved</p>
                         </div>
                 </div>
                 
     
 </body>
 </html>
+
