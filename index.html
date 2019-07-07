@@ -1,5 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143145628-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-143145628-1');
+</script>
+
+
 <head>
     <link rel="icon" href="img/logo_tli.png">
     <title>Tesla Learning Institute</title>
@@ -10,44 +21,44 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa|Libre+Baskerville" rel="stylesheet">
-    <style>       
+    <style>
         .img-responsive {
-            -webkit-filter: grayscale(90%); 
+            -webkit-filter: grayscale(90%);
             filter: grayscale(90%);
-            }
+        }
+        
         nav {
             background-color: black;
             box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
-            
         }
-
+        
         ul li a {
             color: white;
-            font-family: 'Libre Baskerville', serif; 
+            font-family: 'Libre Baskerville', serif;
             font-size: 20px;
             letter-spacing: 1.2px;
             padding-left: 10px;
         }
-
+        
         ul li a:hover {
             color: #000;
             background-color: #fb2525;
         }
-
+        
         .nav_below {
             background-color: #fb2525;
             color: white;
             height: 80px;
         }
-
+        
         .nav_below h4 {
             padding-left: 5%;
             padding-top: 10px;
         }
-
+        
         .navbar-toggler-icon {
             display: inline-block;
             width: 1.5em;
@@ -57,14 +68,15 @@
             background: no-repeat center center;
             background-size: 100% 100%;
         }
-
-        #classes a:hover{
+        
+        #classes a:hover {
             background-color: #fb2525;
         }
-        #classes a:hover{
-            color:white;
+        
+        #classes a:hover {
+            color: white;
         }
-
+        
         .first_box {
             float: left;
             font-size: 60px;
@@ -72,36 +84,36 @@
             font-family: 'Libre Baskerville', serif;
             padding-top: 5%;
         }
-
+        
         .navbar-toggler-icon {
             background-color: #ffffff;
         }
-
+        
         :root {
             --input-padding-x: 1.5rem;
             --input-padding-y: .75rem;
         }
-
+        
         .card-signin {
             border: 0;
             border-radius: 1rem;
             box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
         }
-
+        
         .card-signin .card-title {
             margin-bottom: 2rem;
             font-weight: 300;
             font-size: 1.5rem;
         }
-
+        
         .card-signin .card-body {
             padding: 2rem;
         }
-
+        
         .form-signin {
             width: 100%;
         }
-
+        
         .form-signin .btn {
             font-size: 80%;
             border-radius: 5rem;
@@ -110,22 +122,22 @@
             padding: 1rem;
             transition: all 0.2s;
         }
-
+        
         .form-label-group {
             position: relative;
             margin-bottom: 1rem;
         }
-
+        
         .form-label-group input {
             height: auto;
             border-radius: 2rem;
         }
-
+        
         .form-label-group>input,
         .form-label-group>label {
             padding: var(--input-padding-y) var(--input-padding-x);
         }
-
+        
         .form-label-group>label {
             position: absolute;
             top: 0;
@@ -139,227 +151,305 @@
             border-radius: .25rem;
             transition: all .1s ease-in-out;
         }
-
+        
         .form-label-group input::-webkit-input-placeholder {
             color: transparent;
         }
-
+        
         .form-label-group input:-ms-input-placeholder {
             color: transparent;
         }
-
+        
         .form-label-group input::-ms-input-placeholder {
             color: transparent;
         }
-
+        
         .form-label-group input::-moz-placeholder {
             color: transparent;
         }
-
+        
         .form-label-group input::placeholder {
             color: transparent;
         }
-
+        
         .form-label-group input:not(:placeholder-shown) {
             padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
             padding-bottom: calc(var(--input-padding-y) / 3);
         }
-
+        
         .form-label-group input:not(:placeholder-shown)~label {
             padding-top: calc(var(--input-padding-y) / 3);
             padding-bottom: calc(var(--input-padding-y) / 3);
             font-size: 12px;
             color: #777;
         }
-
+        
         .btn-google {
             color: white;
             background-color: #ea4335;
         }
-
+        
         .btn-facebook {
             color: white;
             background-color: #3b5998;
         }
-
+        
         .card-body img {
             height: 300px;
             width: 320px;
             object-fit: cover;
         }
+        
         .row .column .card {
             margin-left: 10px;
             margin-right: 10px;
-
         }
-         #last_row .column .card {
+        
+        #last_row .column .card {
             margin-left: 0px;
             margin-right: 0px;
-
         }
-        q{
-         font-size: 80px;
-         font-weight: 900;
-         letter-spacing: -3.2px;
-         font-family: 'Righteous', cursive;          
-         letter-spacing: 3px;
-        color: hsl(0,0%,100%);
+        
+        q {
+            font-size: 80px;
+            font-weight: 900;
+            letter-spacing: -3.2px;
+            font-family: 'Righteous', cursive;
+            letter-spacing: 3px;
+            color: hsl(0, 0%, 100%);
         }
-        #quote{
-          background-color: black;
-          
+        
+        #quote {
+            background-color: black;
         }
+        
         .footer {
-        position:relative;
-        width: 100%;
-        height: 30%;
-        background-color:hsl(141, 72%,39%);
-        color: white;
-        text-align: center;
-        font-family: 'Libre Baskerville', serif; 
-        padding-top: 30px;
+            position: relative;
+            width: 100%;
+            height: 30%;
+            background-color: hsl(141, 72%, 39%);
+            color: white;
+            text-align: center;
+            font-family: 'Libre Baskerville', serif;
+            padding-top: 30px;
         }
-        .fa{
+        
+        .fa {
             padding: 10px 10px;
             margin-bottom: 30px;
         }
-        hr.footer_hr{
-            border-top:1px solid white;
+        
+        hr.footer_hr {
+            border-top: 1px solid white;
         }
-        .fa:hover{
+        
+        .fa:hover {
             color: black;
         }
-        q{
-         font-size: 80px;
-         font-weight: 900;
-         letter-spacing: -3.2px;
-         font-family: 'Righteous', cursive;          
-         letter-spacing: 3px;
-        color: hsl(0,0%,100%);
+        
+        q {
+            font-size: 80px;
+            font-weight: 900;
+            letter-spacing: -3.2px;
+            font-family: 'Righteous', cursive;
+            letter-spacing: 3px;
+            color: hsl(0, 0%, 100%);
         }
-  
-
-.card-content {
-	background: #ffffff;
-	border: 4px;
-	box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
-}
-
-.card-img {
-	position: relative;
-	overflow: hidden;
-	border-radius: 0;
-	z-index: 1;
-}
-
-.card-img img {
-	width: 100%;
-	height: auto;
-	display: block;
-}
-
-.card-img span {
-	position: absolute;
-    top: 15%;
-    left: 12%;
-    background: #1ABC9C;
-    padding: 6px;
-    color: #fff;
-    font-size: 12px;
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
-    transform: translate(-50%,-50%);
-}
-.card-img span h4{
-        font-size: 12px;
-        margin:0;
-        padding:10px 5px;
-        line-height: 0;
-}
-.card-desc {
-	padding: 1.25rem;
-}
-
-.card-desc h3 {
-	color: #000000;
-    font-weight: 600;
-    font-size: 1.5em;
-    line-height: 1.3em;
-    margin-top: 0;
-    margin-bottom: 5px;
-    padding: 0;
-}
-
-.card-desc p {
-	color: #747373;
-    font-size: 14px;
-	font-weight: 400;
-	font-size: 1em;
-	line-height: 1.5;
-	margin: 0px;
-	margin-bottom: 20px;
-	padding: 0;
-	font-family: 'Raleway', sans-serif;
-}
-.btn-card{
-	background-color: black;
-	color: #fff;
-	box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
-    padding: .84rem 2.14rem;
-    font-size: .81rem;
-    -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
-    -o-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
-    margin: 0;
-    border: 0;
-    -webkit-border-radius: .125rem;
-    border-radius: .125rem;
-    cursor: pointer;
-    text-transform: uppercase;
-    white-space: normal;
-    word-wrap: break-word;
-    color: #fff;
-}
-.btn-card:hover {
-    background: orange;
-}
-a.btn-card {
-    text-decoration: none;
-    color: #fff;
-}
-
+        
+        .card-content {
+            background: #ffffff;
+            border: 4px;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+        }
+        
+        .card-img {
+            position: relative;
+            overflow: hidden;
+            border-radius: 0;
+            z-index: 1;
+        }
+        
+        .card-img img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .card-img span {
+            position: absolute;
+            top: 15%;
+            left: 12%;
+            background: #1ABC9C;
+            padding: 6px;
+            color: #fff;
+            font-size: 12px;
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -ms-border-radius: 4px;
+            -o-border-radius: 4px;
+            transform: translate(-50%, -50%);
+        }
+        
+        .card-img span h4 {
+            font-size: 12px;
+            margin: 0;
+            padding: 10px 5px;
+            line-height: 0;
+        }
+        
+        .card-desc {
+            padding: 1.25rem;
+        }
+        
+        .card-desc h3 {
+            color: #000000;
+            font-weight: 600;
+            font-size: 1.5em;
+            line-height: 1.3em;
+            margin-top: 0;
+            margin-bottom: 5px;
+            padding: 0;
+        }
+        
+        .card-desc p {
+            color: #747373;
+            font-size: 14px;
+            font-weight: 400;
+            font-size: 1em;
+            line-height: 1.5;
+            margin: 0px;
+            margin-bottom: 20px;
+            padding: 0;
+            font-family: 'Raleway', sans-serif;
+        }
+        
+        .btn-card {
+            background-color: black;
+            color: #fff;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+            padding: .84rem 2.14rem;
+            font-size: .81rem;
+            -webkit-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+            transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+            -o-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+            transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+            transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+            margin: 0;
+            border: 0;
+            -webkit-border-radius: .125rem;
+            border-radius: .125rem;
+            cursor: pointer;
+            text-transform: uppercase;
+            white-space: normal;
+            word-wrap: break-word;
+            color: #fff;
+        }
+        
+        .btn-card:hover {
+            background: orange;
+        }
+        
+        a.btn-card {
+            text-decoration: none;
+            color: #fff;
+        }
+        
+        #badge {
+            animation: colorchange 1s infinite alternate;
+            /* animation-name followed by duration in seconds*/
+            /* you could also use milliseconds (ms) or something like 2.5s */
+            -webkit-animation: colorchange 1s infinite alternate;
+            /* Chrome and Safari */
+        }
+        
+        @keyframes colorchange {
+            0% {
+                background: red;
+            }
+            25% {
+                background: yellow;
+            }
+            50% {
+                background: blue;
+            }
+            75% {
+                background: green;
+            }
+            100% {
+                background: red;
+            }
+        }
+        
+        @-webkit-keyframes colorchange
+        /* Safari and Chrome - necessary duplicate */
+        
+        {
+            0% {
+                background: red;
+            }
+            25% {
+                background: yellow;
+            }
+            50% {
+                background: blue;
+            }
+            75% {
+                background: green;
+            }
+            100% {
+                background: red;
+            }
+        }
+        
+        .mapouter {
+            position: relative;
+            text-align: right;
+            height: 500px;
+            width: 100%;
+        }
+        
+        .gmap_canvas {
+            overflow: hidden;
+            background: none!important;
+            height: 500px;
+            width: 100%;
+        }
     </style>
 </head>
 
 <body>
-    
+
     <nav class="navbar navbar-expand-sm">
         <a class="navbar-brand" style="color:white; padding-left:10px;">
-            <img src="img/logo_tli.png" width="80px" height="80px" alt="icon"><span style ="color: green;font-size : 25px;font-family: 'Libre Baskerville', serif;">Tesla Learning</span>
+            <img src="img/logo_tli.png" width="80px" height="80px" alt="icon"><span style="color: green;font-size : 20px;font-family: 'Libre Baskerville', serif;">Tesla Learning</span>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span style="font-size:30px;cursor:pointer; color:green" onclick="openNav()">☰</span></button>
+            <span style="font-size:30px;cursor:pointer; color:green" >☰</span></button>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Acadamics</a>
-                            <div class="dropdown-menu" id ="classes" >
-                              <a class="dropdown-item" href="Class_IX.html">Class IX</a>
-                              <a class="dropdown-item" href="Class_x.html">Class X</a>
-                              <a class="dropdown-item" href="Class_XI.html">Class XI-Science</a>
-                              <a class="dropdown-item" href="Class_XI.html">Class XI-Commerce</a>
-                              <a class="dropdown-item" href="Class_XII.html">Class XII-Science</a>
-                              <a class="dropdown-item" href="Class_XI.html">Class XII-Commerce</a>
-                            </div>
-                          </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Skills </a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Acadamics</a>
+                    <div class="dropdown-menu" id="classes">
+                        <a class="dropdown-item" href="Class_IX.html">Class IX</a>
+                        <a class="dropdown-item" href="Class_x.html">Class X</a>
+                        <a class="dropdown-item" href="Class_XI.html">Class XI-Science</a>
+                        <a class="dropdown-item" href="Class_XI.html">Class XI-Commerce</a>
+                        <a class="dropdown-item" href="Class_XII.html">Class XII-Science</a>
+                        <a class="dropdown-item" href="Class_XI.html">Class XII-Commerce</a>
+                    </div>
                 </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Power Courses</a>
+                    <div class="dropdown-menu" id="classes">
+                        <a class="dropdown-item" href="pdf/Topics For Basic Maths.pdf" target="blank"> Basic Mathematics</a>
+                        <a class="dropdown-item" href="pdf/Vedic Mathematics Course Intro.pdf">Vedic Mathematics</a>
+                        <a class="dropdown-item" href="pdf/Spoken and Written English Course Intro.pdf">English(Basic)</a>
+                        
+                    </div>
+                </li>
+                
                 <li class="nav-item">
                     <a class="nav-link" href="#">Test </a>
                 </li>
@@ -370,7 +460,7 @@ a.btn-card {
                     <a class="nav-link" href="blog.html">Blog </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://form.jotform.me/90672703915460">Register</a>
+                    <a class="nav-link" href="https://form.jotform.me/90672703915460">Register <span class="badge badge-light" id ="badge" style="background-color: red">New</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="signup.html">SignUp
@@ -381,54 +471,52 @@ a.btn-card {
         </div>
     </nav>
 
-  <!--  <div class="nav_below">
-        <h4 style="font-family: 'Source Sans Pro', sans-serif; font-weight:light; text-align: center; padding-top: 30px;"><a href="https://form.jotform.me/90672703915460" style="color:white;">Register Now</a></h4>
-    </div>-->
-
     <!--signup page-->
     <div class="container-fluid" style="background-image: url('img/algi2.jpg');">
-        
-        
+
         <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-6 ">
-                <q>DREAM BIGGER;<br>GO BIGGER.</q><br>
-                <button type="button" class="btn btn-outline-success" style="margin-top:50px; margin-left:40%;"><a href="https://form.jotform.me/90672703915460" style="color:green; text-decoration-line: none">Register Now</a></button>
-            </div>
-            
-            <div class="col-lg-3"  style="margin: auto;">
-                <div class="card card-signin my-4">
-                    <div class="card-body" >
-                        <h5 class="card-title text-center">Sign In</h5>
-                        <form class="form-signin">
-                            <div class="form-label-group">
-                                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-                                <label for="inputEmail">Email address</label>
-                            </div>
-                            <div class="form-label-group">
-                                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                                <label for="inputPassword">Password</label>
-                            </div>
-                            <div class="custom-control custom-checkbox mb-3">
-                                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                <label class="custom-control-label" for="customCheck1">Remember password</label>
-                            </div>
-                            <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign in</button>
-                            <hr class="my-4">
-                            <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit">
-                                        <i class="fab fa-google mr-2"></i> Sign in with Google
-                                    </button>
-                            <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit">
-                                        <i class="fab fa-facebook-f mr-2"></i> Sign in with Facebook
-                                    </button>
-                        </form>
+            <div class="row">
+                <div class="col-lg-6 ">
+                    <q>DREAM BIGGER;<br>GO BIGGER.</q>
+                    <br>
+                    <button type="button" class="btn btn-outline-success" style="margin-top:50px; margin-left:40%;">
+                        <a href="https://form.jotform.me/90672703915460" style="color:green; text-decoration-line: none">Register Now 
+                        <span class="badge badge-light" id ="badge" style="background-color: red">New</span>
+                    </a></button>
+                </div>
+
+                <div class="col-lg-3" style="margin: auto;">
+                    <div class="card card-signin my-4">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Sign In</h5>
+                            <form class="form-signin">
+                                <div class="form-label-group">
+                                    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                                    <label for="inputEmail">Email address</label>
+                                </div>
+                                <div class="form-label-group">
+                                    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                                    <label for="inputPassword">Password</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mb-3">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                    <label class="custom-control-label" for="customCheck1">Remember password</label>
+                                </div>
+                                <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign in</button>
+                                <hr class="my-4">
+                                <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit">
+                                    <i class="fab fa-google mr-2"></i> Sign in with Google
+                                </button>
+                                <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit">
+                                    <i class="fab fa-facebook-f mr-2"></i> Sign in with Facebook
+                                </button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-          </div>
         </div>
-      </div>
-    
+    </div>
 
     <!--offering-->
     <div style="background-image:url('img/algi1.jpg')">
@@ -438,182 +526,188 @@ a.btn-card {
         font-family: 'Righteous', cursive;          
         letter-spacing: 3px;
        color: hsl(0,0%,100%); text-align: center; padding-top: 30px; padding-bottom: 30px;">Courses</h1>
-    <section class="details-card">
-        <div class="container" >
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card-content">
-                        <div class="card-img">
-                            <img src="img/science.jpg" alt="">
-                            <span style="background-color:black"><h4>1</h4></span>
-                        </div>
-                        <div class="card-desc">
-                            <h3>Science</h3>
-                            <p>Science in a broad sense existed before the modern era and in many historical civilizations. Modern science is distinct in its approach and successful in its results, so it now defines what science is in the ...</p>
-                                <a href="https://en.wikipedia.org/wiki/Science"  target="blank" class="btn-card">Read</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card-content">
-                        <div class="card-img">
-                            <img src="img/commerce.jpg" alt="">
-                            <span style="background-color:black"><h4>2</h4></span>
-                        </div>
-                        <div class="card-desc">
-                            <h3>Commerce</h3>
-                            <p>Some commentators trace the origins of commerce to the very start of transactions in prehistoric times. Apart from traditional self-sufficiency, trading became a principal facility of prehistoric people ...</p>
-                                <a href="https://en.wikipedia.org/wiki/Commerce"  target="blank" class="btn-card">Read</a>
+        <section class="details-card">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card-content">
+                            <div class="card-img">
+                                <img src="img/science.jpg" alt="">
+                                <span style="background-color:black"><h4>1</h4></span>
+                            </div>
+                            <div class="card-desc">
+                                <h3>Science</h3>
+                                <p>Science in a broad sense existed before the modern era and in many historical civilizations. Modern science is distinct in its approach and successful in its results, so it now defines what science is in the ...</p>
+                                <a href="https://en.wikipedia.org/wiki/Science" target="blank" class="btn-card">Read</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card-content">
-                        <div class="card-img">
-                            <img src="img/girl.jpg" alt="">
-                            <span style="background-color:black"><h4>3</h4></span>
+                    <div class="col-md-4">
+                        <div class="card-content">
+                            <div class="card-img">
+                                <img src="img/commerce.jpg" alt="">
+                                <span style="background-color:black"><h4>2</h4></span>
+                            </div>
+                            <div class="card-desc">
+                                <h3>Commerce</h3>
+                                <p>Some commentators trace the origins of commerce to the very start of transactions in prehistoric times. Apart from traditional self-sufficiency, trading became a principal facility of prehistoric people ...</p>
+                                <a href="https://en.wikipedia.org/wiki/Commerce" target="blank" class="btn-card">Read</a>
+                            </div>
                         </div>
-                        <div class="card-desc">
-                            <h3>Mathematics</h3>
-                            <p>   The history of mathematics can be seen as an ever-increasing series of abstractions. The first abstraction, which is shared by many animals, was probably that of numbers: the realization that a coll...</p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-content">
+                            <div class="card-img">
+                                <img src="img/girl.jpg" alt="">
+                                <span style="background-color:black"><h4>3</h4></span>
+                            </div>
+                            <div class="card-desc">
+                                <h3>Mathematics</h3>
+                                <p> The history of mathematics can be seen as an ever-increasing series of abstractions. The first abstraction, which is shared by many animals, was probably that of numbers: the realization that a coll...</p>
                                 <a href="https://en.wikipedia.org/wiki/Mathematics" target="blank" class="btn-card">Read</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="details-card" style="padding-top: 50px; padding-bottom:50px;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card-content">
-                        <div class="card-img">
-                            <img src="img/yoga.jpg" alt="">
-                            <span style="background-color:black"><h4>4</h4></span>
-                        </div>
-                        <div class="card-desc">
-                            <h3>Yoga</h3>
-                            <p>   Yoga ( Sanskrit: योग; About this soundpronunciation) is a group of physical, mental, and spiritual practices or disciplines which originated in ancient India. Yoga is one of the six orthodox schools of ...</p>
+        </section>
+        <section class="details-card" style="padding-top: 50px; padding-bottom:50px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card-content">
+                            <div class="card-img">
+                                <img src="img/yoga.jpg" alt="">
+                                <span style="background-color:black"><h4>4</h4></span>
+                            </div>
+                            <div class="card-desc">
+                                <h3>Yoga</h3>
+                                <p> Yoga ( Sanskrit: योग; About this soundpronunciation) is a group of physical, mental, and spiritual practices or disciplines which originated in ancient India. Yoga is one of the six orthodox schools of ...</p>
                                 <a href="https://en.wikipedia.org/wiki/Yoga" target="blank" class="btn-card">Read</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card-content">
-                        <div class="card-img">
-                            <img src="img/pro.jpg" alt="">
-                            <span style="background-color:black"><h4>5</h4></span>
-                        </div>
-                        <div class="card-desc">
-                            <h3>Programming</h3>
-                            <p>Programming is the process of designing and building an executable computer program for accomplishing a specific computing task. Programming involves tasks such as: analysis ...</p>
-                                <a href="https://en.wikipedia.org/wiki/Computer_programming"  target="blank" class="btn-card">Read</a>
+                    <div class="col-md-4">
+                        <div class="card-content">
+                            <div class="card-img">
+                                <img src="img/pro.jpg" alt="">
+                                <span style="background-color:black"><h4>5</h4></span>
+                            </div>
+                            <div class="card-desc">
+                                <h3>Programming</h3>
+                                <p>Programming is the process of designing and building an executable computer program for accomplishing a specific computing task. Programming involves tasks such as: analysis ...</p>
+                                <a href="https://en.wikipedia.org/wiki/Computer_programming" target="blank" class="btn-card">Read</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card-content">
-                        <div class="card-img">
-                            <img src="img/other.jpg" alt="">
-                            <span style="background-color:black"><h4>6</h4></span>
-                        </div>
-                        <div class="card-desc">
-                            <h3>Other Skills</h3>
-                            <p>A skill is the ability to carry out a task with determined results often within a given amount of time, energy, or both. Skills can often be divided into domain-general and domain ...</p>
-                                <a href="https://en.wikipedia.org/wiki/Skill"  target="blank" class="btn-card">Read</a>
+                    <div class="col-md-4">
+                        <div class="card-content">
+                            <div class="card-img">
+                                <img src="img/other.jpg" alt="">
+                                <span style="background-color:black"><h4>6</h4></span>
+                            </div>
+                            <div class="card-desc">
+                                <h3>Other Skills</h3>
+                                <p>A skill is the ability to carry out a task with determined results often within a given amount of time, energy, or both. Skills can often be divided into domain-general and domain ...</p>
+                                <a href="https://en.wikipedia.org/wiki/Skill" target="blank" class="btn-card">Read</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-</div>
-    
+        </section>
+    </div>
 
-
-            <!--how we are going to do this -->
-            <div style="background-image:url('img/algi3.jpg')">
-                <h1 style="font-size: 80px;
+    <!--how we are going to do this -->
+    <div style="background-image:url('img/algi3.jpg')">
+        <h1 style="font-size: 80px;
         font-weight: 900;
         letter-spacing: -3.2px;
         font-family: 'Righteous', cursive;          
         letter-spacing: 3px;
        color: hsl(0,0%,100%); text-align: center; padding-top: 30px; padding-bottom: 30px;">Format</h1>
-            <section class="details-card" style="padding-bottom: 30px;">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="card-content">
-                                <div class="card-img">
-                                    <img src="img/teach.jpg" alt="">
-                                    <span style="background-color:black"><h4>Step1</h4></span>
-                                </div>
-                                <div class="card-desc">
-                                    <h3>Teach</h3>
-                                    <p>Education is the process of facilitating learning, or the acquisition of knowledge, skills, values, beliefs, and habits...</p>
-                                        <a href="https://en.wikipedia.org/wiki/Education"  target="blank" class="btn-card">Read</a>
-                                </div>
+        <section class="details-card" style="padding-bottom: 30px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card-content">
+                            <div class="card-img">
+                                <img src="img/teach.jpg" alt="">
+                                <span style="background-color:black"><h4>Step1</h4></span>
+                            </div>
+                            <div class="card-desc">
+                                <h3>Teach</h3>
+                                <p>Education is the process of facilitating learning, or the acquisition of knowledge, skills, values, beliefs, and habits...</p>
+                                <a href="https://en.wikipedia.org/wiki/Education" target="blank" class="btn-card">Read</a>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="card-content">
-                                <div class="card-img">
-                                    <img src="img/doubt.jpg" alt="" style="height:263px;">
-                                    <span style="background-color:black"><h4>Step2</h4></span>
-                                </div>
-                                <div class="card-desc">
-                                    <h3>Doubts</h3>
-                                    <p>Doubt is a mental state in which the mind remains suspended between two or more contradictory propositions, unable to...</p>
-                                        <a href="https://en.wikipedia.org/wiki/Doubt"  target="blank" class="btn-card">Read</a>
-                                </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-content">
+                            <div class="card-img">
+                                <img src="img/doubt.jpg" alt="" style="height:263px;">
+                                <span style="background-color:black"><h4>Step2</h4></span>
+                            </div>
+                            <div class="card-desc">
+                                <h3>Doubts</h3>
+                                <p>Doubt is a mental state in which the mind remains suspended between two or more contradictory propositions, unable to...</p>
+                                <a href="https://en.wikipedia.org/wiki/Doubt" target="blank" class="btn-card">Read</a>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="card-content">
-                                <div class="card-img">
-                                    <img src="img/test.jpg" alt="" style="height:263px;">
-                                    <span style="background-color:black"><h4>Step3</h4></span>
-                                </div>
-                                <div class="card-desc">
-                                    <h3>Test</h3>
-                                    <p>A test or examination (informally, exam or evaluation) is an assessment intended to measure a test-taker's knowledge,...</p>
-                                        <a href="https://en.wikipedia.org/wiki/Test_(assessment)" target="blank" class="btn-card">Read</a>
-                                </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-content">
+                            <div class="card-img">
+                                <img src="img/test.jpg" alt="" style="height:263px;">
+                                <span style="background-color:black"><h4>Step3</h4></span>
+                            </div>
+                            <div class="card-desc">
+                                <h3>Test</h3>
+                                <p>A test or examination (informally, exam or evaluation) is an assessment intended to measure a test-taker's knowledge,...</p>
+                                <a href="https://en.wikipedia.org/wiki/Test_(assessment)" target="blank" class="btn-card">Read</a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
             </div>
-           
+        </section>
+    </div>
 
-                <!--footer-->
-                
-                <div class= "footer">
-                        <div class="d-flex bd-highlight">
-                                
-                                
-                                <div class="p-2 flex-fill bd-highlight">
-                                    <h5>Contact Us</h5>
-                                    <hr class="footer_hr">
-                                    <a href="https://www.facebook.com/Tesla-Learning-Institute-726488824417999/?__tn__=%2Cd%2CP-R&eid=ARBzL3TupNp7Umsi2rXZmwCSRfoVOil4DQqkNxJX-0s_774v8umUtl2aK1W_YnPA2lU8zaKtl00RKrJM"  target="blank"style="color:white">
-                                    <i class="fa fa-facebook"></i>
-                                   </a>                                    
-                                    <i class="fa fa-instagram"></i>
-                                    <i class="fa fa-youtube-play"></i>
-                                    <a href="#" style="color: white">
-                                    <i class="fa fa-envelope"></i>  
-                                    </a>     
-                                </div>
+    <!--footer-->
 
-                        </div>
-                        <div>
-                            <p style="color:#000"> © Copyright 2019 Tesla Learning Institute, All Rights Reserved</p>
-                        </div>
-                </div>
-                
-    
+    <div class="footer">
+        <div class="d-flex bd-highlight">
+
+            <div class="p-2 flex-fill bd-highlight">
+                <h5>Contact Us</h5>
+                <hr class="footer_hr">
+
+                <i class="fa fa-facebook">
+                                        <a href="https://www.facebook.com/Tesla-Learning-Institute-726488824417999/?__tn__=%2Cd%2CP-R&eid=ARBzL3TupNp7Umsi2rXZmwCSRfoVOil4DQqkNxJX-0s_774v8umUtl2aK1W_YnPA2lU8zaKtl00RKrJM"  target="blank"style="color:white"></a>
+                                    </i>
+
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-youtube-play"></i>
+                <a href="#" style="color: white">
+                    <i class="fa fa-envelope"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <div>
+            <p style="color:#000"> © Copyright 2019 Tesla Learning Institute, All Rights Reserved</p>
+        </div>
+        <div class="mapouter">
+            <div class="gmap_canvas">
+                <iframe width="100%" height="500px" id="gmap_canvas" src="https://maps.google.com/maps?q=tesla%20learning%20institute&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="10">
+
+            </div>
+
+        </div>
+
+    </div>
+
 </body>
-</html>
 
+</html>
